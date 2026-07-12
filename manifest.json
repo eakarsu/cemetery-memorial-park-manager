@@ -1,0 +1,30 @@
+{
+  "id": "cemetery-memorial-park-manager",
+  "title": "Cemetery Memorial Park Manager App",
+  "industry": "Retail, Commerce & Consumer",
+  "industryId": "retail-commerce-consumer",
+  "specialization": "Cemetery Memorial Park Manager",
+  "sourcePlatformGroup": "local-services-platform",
+  "sources": [
+    "AICemeteryMemorialParkManager",
+    "AIMarineBoatDockManager",
+    "AIPhotographyBusinessManager",
+    "AIRVParkCampgroundManager"
+  ],
+  "featureCount": 160,
+  "candidateFeatureCount": 243,
+  "eliminatedSimilarFeatures": 83,
+  "evidenceCount": 467,
+  "aiPageCount": 0,
+  "sourceAIPageCount": 0,
+  "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
+  "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
+  "database": "database.sqlite",
+  "databaseSeed": {
+    "seededProjects": 2,
+    "seededTables": 39,
+    "seededRows": 672
+  },
+  "visibleFeatureCount": 28,
+  "featureVisibilityMode": "seeded-or-ai"
+}
