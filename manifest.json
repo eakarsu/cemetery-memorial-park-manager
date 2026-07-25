@@ -12,19 +12,19 @@
     "AIRVParkCampgroundManager"
   ],
   "featureCount": 160,
-  "candidateFeatureCount": 243,
-  "eliminatedSimilarFeatures": 83,
-  "evidenceCount": 467,
+  "candidateFeatureCount": 258,
+  "eliminatedSimilarFeatures": 98,
+  "evidenceCount": 468,
   "aiPageCount": 0,
   "sourceAIPageCount": 0,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
   "databaseSeed": {
-    "seededProjects": 2,
-    "seededTables": 39,
-    "seededRows": 672
+    "seededProjects": 1,
+    "seededTables": 17,
+    "seededRows": 272
   },
-  "visibleFeatureCount": 28,
+  "visibleFeatureCount": 26,
   "featureVisibilityMode": "seeded-or-ai"
 }

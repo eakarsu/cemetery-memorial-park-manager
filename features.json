@@ -1,5 +1,73 @@
 [
   {
+    "name": "Activity Recommendations",
+    "canonicalKey": "activity recommendation",
+    "aliases": [],
+    "kinds": [
+      "api",
+      "page"
+    ],
+    "routes": [
+      "/activity-recommendations",
+      "/ai/activity-recommendations"
+    ],
+    "sourceProjects": [
+      "AIRVParkCampgroundManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "backend/routes/ai.js:149",
+        "route": "/activity-recommendations",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/App.jsx:104",
+        "route": "/ai/activity-recommendations",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/Dashboard.jsx:56",
+        "route": "/ai/activity-recommendations",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "Agentic Memorial Concierge That Drafts Obituary Pl Page",
+    "canonicalKey": "agentic concierge draft memorial obituary pl that",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/AgenticMemorialConciergeThatDraftsObituaryPlPage"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AgenticMemorialConciergeThatDraftsObituaryPlPage.js",
+        "route": "/AgenticMemorialConciergeThatDraftsObituaryPlPage",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
     "name": "AI Activity Recommendations",
     "canonicalKey": "activity ai recommendation",
     "aliases": [],
@@ -308,74 +376,6 @@
     ]
   },
   {
-    "name": "Activity Recommendations",
-    "canonicalKey": "activity recommendation",
-    "aliases": [],
-    "kinds": [
-      "api",
-      "page"
-    ],
-    "routes": [
-      "/activity-recommendations",
-      "/ai/activity-recommendations"
-    ],
-    "sourceProjects": [
-      "AIRVParkCampgroundManager"
-    ],
-    "consolidatedFromApps": [
-      "retail-commerce-consumer/cemetery-memorial-park-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIRVParkCampgroundManager",
-        "path": "backend/routes/ai.js:154",
-        "route": "/activity-recommendations",
-        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIRVParkCampgroundManager",
-        "path": "frontend/src/App.jsx:104",
-        "route": "/ai/activity-recommendations",
-        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIRVParkCampgroundManager",
-        "path": "frontend/src/pages/Dashboard.jsx:56",
-        "route": "/ai/activity-recommendations",
-        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
-      }
-    ]
-  },
-  {
-    "name": "Agentic Memorial Concierge That Drafts Obituary Pl Page",
-    "canonicalKey": "agentic concierge drafts memorial obituary pl that",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/AgenticMemorialConciergeThatDraftsObituaryPlPage"
-    ],
-    "sourceProjects": [
-      "AICemeteryMemorialParkManager"
-    ],
-    "consolidatedFromApps": [
-      "retail-commerce-consumer/cemetery-memorial-park-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AICemeteryMemorialParkManager",
-        "path": "client/src/pages/AgenticMemorialConciergeThatDraftsObituaryPlPage.js",
-        "route": "/AgenticMemorialConciergeThatDraftsObituaryPlPage",
-        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
-      }
-    ]
-  },
-  {
     "name": "Amenities",
     "canonicalKey": "amenity",
     "aliases": [],
@@ -486,7 +486,7 @@
       {
         "kind": "api",
         "sourceProject": "AIRVParkCampgroundManager",
-        "path": "backend/routes/ai.js:349",
+        "path": "backend/routes/ai.js:344",
         "route": "/amenity-demand-prediction",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
@@ -526,7 +526,7 @@
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
-        "path": "backend/routes/ai.js:206",
+        "path": "backend/routes/ai.js:181",
         "route": "/analyze-photo-upload",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -552,7 +552,7 @@
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
-        "path": "backend/routes/ai.js:274",
+        "path": "backend/routes/ai.js:249",
         "route": "/auto-cull",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -578,7 +578,7 @@
       {
         "kind": "api",
         "sourceProject": "AICemeteryMemorialParkManager",
-        "path": "server/routes/ai.js:274",
+        "path": "server/routes/ai.js:275",
         "route": "/bereavement",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -587,13 +587,16 @@
   {
     "name": "Bookings",
     "canonicalKey": "booking",
-    "aliases": [],
+    "aliases": [
+      "Bookings Page"
+    ],
     "kinds": [
       "navigation",
       "page"
     ],
     "routes": [
       "/Bookings",
+      "/BookingsPage",
       "/bookings",
       "/dashboard/bookings",
       "/features/Bookings",
@@ -613,62 +616,6 @@
       "retail-commerce-consumer/local-service-directory"
     ],
     "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AISalonSpaBookingOptimizer",
-        "path": "client/src/App.js:103",
-        "route": "/bookings",
-        "originApp": "retail-commerce-consumer/laundry-services"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISalonSpaBookingOptimizer",
-        "path": "client/src/pages/Dashboard.js:24",
-        "route": "/bookings",
-        "originApp": "retail-commerce-consumer/laundry-services"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIPressureWashingExteriorCleaning",
-        "path": "client/src/App.js:170",
-        "route": "/bookings",
-        "originApp": "retail-commerce-consumer/commercial-cleaning-operations"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIPressureWashingExteriorCleaning",
-        "path": "client/src/pages/Dashboard.js:24",
-        "route": "/bookings",
-        "originApp": "retail-commerce-consumer/commercial-cleaning-operations"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIPressureWashingExteriorCleaning",
-        "path": "client/src/pages/features/Bookings.js",
-        "route": "/features/Bookings",
-        "originApp": "retail-commerce-consumer/commercial-cleaning-operations"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "beautyhqio",
-        "path": "src/app/(dashboard)/settings/booking/page.tsx",
-        "route": "/settings/booking",
-        "originApp": "retail-commerce-consumer/local-service-directory"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "localServiceDirectory",
-        "path": "src/components/layout/DashboardSidebar.tsx:26",
-        "route": "",
-        "originApp": "retail-commerce-consumer/local-service-directory"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "localServiceDirectory",
-        "path": "src/app/(dashboard)/dashboard/bookings/page.tsx",
-        "route": "/dashboard/bookings",
-        "originApp": "retail-commerce-consumer/local-service-directory"
-      },
       {
         "kind": "page",
         "sourceProject": "AIPhotographyBusinessManager",
@@ -696,6 +643,69 @@
         "path": "frontend/src/pages/Dashboard.js:88",
         "route": "/bookings",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPressureWashingExteriorCleaning",
+        "path": "client/src/App.js:170",
+        "route": "/bookings",
+        "originApp": "retail-commerce-consumer/commercial-cleaning-operations"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPressureWashingExteriorCleaning",
+        "path": "client/src/pages/Dashboard.js:24",
+        "route": "/bookings",
+        "originApp": "retail-commerce-consumer/commercial-cleaning-operations"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPressureWashingExteriorCleaning",
+        "path": "client/src/pages/features/Bookings.js",
+        "route": "/features/Bookings",
+        "originApp": "retail-commerce-consumer/commercial-cleaning-operations"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISalonSpaBookingOptimizer",
+        "path": "client/src/App.js:103",
+        "route": "/bookings",
+        "originApp": "retail-commerce-consumer/laundry-services"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISalonSpaBookingOptimizer",
+        "path": "client/src/pages/Dashboard.js:24",
+        "route": "/bookings",
+        "originApp": "retail-commerce-consumer/laundry-services"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISalonSpaBookingOptimizer",
+        "path": "client/src/pages/BookingsPage.js",
+        "route": "/BookingsPage",
+        "originApp": "retail-commerce-consumer/laundry-services"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "beautyhqio",
+        "path": "src/app/(dashboard)/settings/booking/page.tsx",
+        "route": "/settings/booking",
+        "originApp": "retail-commerce-consumer/local-service-directory"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "localServiceDirectory",
+        "path": "src/components/layout/DashboardSidebar.tsx:25",
+        "route": "",
+        "originApp": "retail-commerce-consumer/local-service-directory"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "localServiceDirectory",
+        "path": "src/app/(dashboard)/dashboard/bookings/page.tsx",
+        "route": "/dashboard/bookings",
+        "originApp": "retail-commerce-consumer/local-service-directory"
       }
     ]
   },
@@ -771,7 +781,7 @@
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
-        "path": "backend/routes/ai.js:363",
+        "path": "backend/routes/ai.js:338",
         "route": "/business-insights",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -799,7 +809,7 @@
       {
         "kind": "api",
         "sourceProject": "AIRVParkCampgroundManager",
-        "path": "backend/routes/ai.js:299",
+        "path": "backend/routes/ai.js:294",
         "route": "/cancellation-risk",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
@@ -1466,7 +1476,7 @@
       {
         "kind": "api",
         "sourceProject": "AIMarineBoatDockManager",
-        "path": "server/index.js:84",
+        "path": "server/index.js:105",
         "route": "/api/compliance-calendar",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -2330,7 +2340,7 @@
       {
         "kind": "api",
         "sourceProject": "AIMarineBoatDockManager",
-        "path": "server/routes/ai.js:385",
+        "path": "server/routes/ai.js:386",
         "route": "/emergency-preparedness-plan",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -2408,7 +2418,7 @@
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
-        "path": "backend/routes/ai.js:754",
+        "path": "backend/routes/ai.js:729",
         "route": "/galleries/:id/favorites",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -2483,27 +2493,6 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "hairSalon",
-        "path": "src/app/(dashboard)/dashboard/page.tsx:176",
-        "route": "/gallery",
-        "originApp": "retail-commerce-consumer/local-service-directory"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "hairSalon",
-        "path": "src/app/(dashboard)/gallery/page.tsx",
-        "route": "/gallery",
-        "originApp": "retail-commerce-consumer/local-service-directory"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "hairSalon",
-        "path": "src/components/Sidebar.tsx:68",
-        "route": "/gallery",
-        "originApp": "retail-commerce-consumer/local-service-directory"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AIPhotographyBusinessManager",
         "path": "frontend/src/App.js:88",
         "route": "/galleries",
@@ -2531,9 +2520,30 @@
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
       {
+        "kind": "page",
+        "sourceProject": "hairSalon",
+        "path": "src/app/(dashboard)/dashboard/page.tsx:172",
+        "route": "/gallery",
+        "originApp": "retail-commerce-consumer/local-service-directory"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "hairSalon",
+        "path": "src/app/(dashboard)/gallery/page.tsx",
+        "route": "/gallery",
+        "originApp": "retail-commerce-consumer/local-service-directory"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "hairSalon",
+        "path": "src/components/Sidebar.tsx:66",
+        "route": "/gallery",
+        "originApp": "retail-commerce-consumer/local-service-directory"
+      },
+      {
         "kind": "navigation",
         "sourceProject": "petGrooming",
-        "path": "src/components/layout/sidebar.tsx:45",
+        "path": "src/components/layout/sidebar.tsx:46",
         "route": "",
         "originApp": "retail-commerce-consumer/pet-health-monitor"
       },
@@ -2568,7 +2578,7 @@
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
-        "path": "backend/routes/ai.js:683",
+        "path": "backend/routes/ai.js:658",
         "route": "/gallery-organization-ai",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
@@ -2623,7 +2633,7 @@
   },
   {
     "name": "Gap Clients Without Client",
-    "canonicalKey": "client clients gap without",
+    "canonicalKey": "client gap without",
     "aliases": [
       "Gap Clients Without Client Page"
     ],
@@ -2718,7 +2728,7 @@
   },
   {
     "name": "Gap Galleries Without Gallery",
-    "canonicalKey": "galleries gallery gap without",
+    "canonicalKey": "gallery gap without",
     "aliases": [
       "Gap Galleries Without Gallery Page"
     ],
@@ -2802,7 +2812,7 @@
   },
   {
     "name": "Gap Limited Storage Integration Integrations Stub",
-    "canonicalKey": "gap integration integrations limited storage stub",
+    "canonicalKey": "gap integration limited storage stub",
     "aliases": [
       "Gap Limited Storage Integration Integrations Stub Page"
     ],
@@ -2930,23 +2940,23 @@
       },
       {
         "kind": "page",
-        "sourceProject": "AIPersonalStylist",
-        "path": "frontend/src/App.jsx:95",
-        "route": "/gap-no-audit-logging-grep-0",
-        "originApp": "retail-commerce-consumer/personal-stylist"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AIProductPhotoEnhancer",
         "path": "frontend/src/App.jsx:140",
         "route": "/gap-no-audit-logging-grep-0",
         "originApp": "retail-commerce-consumer/inventory-forecasting"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPersonalStylist",
+        "path": "frontend/src/App.jsx:95",
+        "route": "/gap-no-audit-logging-grep-0",
+        "originApp": "retail-commerce-consumer/personal-stylist"
       }
     ]
   },
   {
     "name": "Gap No Automated Guest Communications Confirmati",
-    "canonicalKey": "automated communications confirmati gap guest no",
+    "canonicalKey": "automated communication confirmati gap guest no",
     "aliases": [],
     "kinds": [
       "page"
@@ -3198,7 +3208,7 @@
   },
   {
     "name": "Gap No Notifications Module Grep 0",
-    "canonicalKey": "0 gap grep no notifications",
+    "canonicalKey": "0 gap grep no notification",
     "aliases": [],
     "kinds": [
       "page"
@@ -3249,7 +3259,7 @@
   },
   {
     "name": "Gap No Notificationssms System",
-    "canonicalKey": "gap no notificationssms",
+    "canonicalKey": "gap no notificationssm",
     "aliases": [],
     "kinds": [
       "page"
@@ -3355,20 +3365,6 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "AISalonSpaBookingOptimizer",
-        "path": "client/src/App.js:146",
-        "route": "/gap-no-public-online-booking-widget-api",
-        "originApp": "retail-commerce-consumer/laundry-services"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISalonSpaBookingOptimizer",
-        "path": "client/src/pages/GapNoPublicOnlineBookingWidgetApi.jsx",
-        "route": "/GapNoPublicOnlineBookingWidgetApi",
-        "originApp": "retail-commerce-consumer/laundry-services"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AIRVParkCampgroundManager",
         "path": "frontend/src/App.jsx:128",
         "route": "/gap-no-online-booking-widget-public-api",
@@ -3387,6 +3383,20 @@
         "path": "frontend/src/pages/GapNoOnlineBookingWidgetPublicApi.jsx",
         "route": "/GapNoOnlineBookingWidgetPublicApi",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISalonSpaBookingOptimizer",
+        "path": "client/src/App.js:146",
+        "route": "/gap-no-public-online-booking-widget-api",
+        "originApp": "retail-commerce-consumer/laundry-services"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISalonSpaBookingOptimizer",
+        "path": "client/src/pages/GapNoPublicOnlineBookingWidgetApi.jsx",
+        "route": "/GapNoPublicOnlineBookingWidgetApi",
+        "originApp": "retail-commerce-consumer/laundry-services"
       }
     ]
   },
@@ -3724,7 +3734,7 @@
   },
   {
     "name": "Gap Shoots Without Shoot",
-    "canonicalKey": "gap shoot shoots without",
+    "canonicalKey": "gap shoot without",
     "aliases": [
       "Gap Shoots Without Shoot Page"
     ],
@@ -3767,7 +3777,7 @@
   },
   {
     "name": "Gap Testimonials Without Review",
-    "canonicalKey": "gap review testimonials without",
+    "canonicalKey": "gap review testimonial without",
     "aliases": [
       "Gap Testimonials Without Review Page"
     ],
@@ -3828,7 +3838,7 @@
       {
         "kind": "api",
         "sourceProject": "AICemeteryMemorialParkManager",
-        "path": "server/routes/ai.js:210",
+        "path": "server/routes/ai.js:211",
         "route": "/genealogy",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -3857,7 +3867,7 @@
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
-        "path": "backend/routes/ai.js:350",
+        "path": "backend/routes/ai.js:325",
         "route": "/generate-caption",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
@@ -3871,7 +3881,7 @@
       {
         "kind": "api",
         "sourceProject": "AITattooBodyArtStudioManager",
-        "path": "server/routes/ai.js:228",
+        "path": "server/routes/ai.js:218",
         "route": "/generate-caption",
         "originApp": "retail-commerce-consumer/tattoo-body-art-studio-manager"
       }
@@ -3897,7 +3907,7 @@
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
-        "path": "backend/routes/ai.js:288",
+        "path": "backend/routes/ai.js:263",
         "route": "/generate-contract",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -3985,7 +3995,8 @@
     "name": "Guests",
     "canonicalKey": "guest",
     "aliases": [
-      "Guest Management"
+      "Guest Management",
+      "Guests Page"
     ],
     "kinds": [
       "navigation",
@@ -3993,8 +4004,8 @@
     ],
     "routes": [
       "/Guests",
-      "/guests",
-      "guests"
+      "/GuestsPage",
+      "/guests"
     ],
     "sourceProjects": [
       "AIHotelRevenueManager",
@@ -4051,10 +4062,10 @@
       },
       {
         "kind": "page",
-        "sourceProject": "cateringService",
-        "path": "frontend/src/App.jsx:93",
-        "route": "guests",
-        "originApp": "retail-commerce-consumer/recipe-meal-planner"
+        "sourceProject": "AIHotelRevenueManager",
+        "path": "client/src/pages/GuestsPage.jsx",
+        "route": "/GuestsPage",
+        "originApp": "retail-commerce-consumer/food-bank-pantry-manager"
       },
       {
         "kind": "page",
@@ -4111,7 +4122,7 @@
       {
         "kind": "api",
         "sourceProject": "AICemeteryMemorialParkManager",
-        "path": "server/routes/ai.js:148",
+        "path": "server/routes/ai.js:149",
         "route": "/inscription",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -4137,7 +4148,7 @@
       {
         "kind": "api",
         "sourceProject": "AIMarineBoatDockManager",
-        "path": "server/routes/ai.js:241",
+        "path": "server/routes/ai.js:242",
         "route": "/insurance-analysis",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -4366,7 +4377,7 @@
       {
         "kind": "api",
         "sourceProject": "AIMarineBoatDockManager",
-        "path": "server/routes/ai.js:348",
+        "path": "server/routes/ai.js:349",
         "route": "/maintenance-cost-forecaster",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -4398,21 +4409,21 @@
       {
         "kind": "api",
         "sourceProject": "AICemeteryMemorialParkManager",
-        "path": "server/routes/ai.js:178",
+        "path": "server/routes/ai.js:179",
         "route": "/maintenance-prediction",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
       {
         "kind": "api",
         "sourceProject": "AIMarineBoatDockManager",
-        "path": "server/routes/ai.js:158",
+        "path": "server/routes/ai.js:159",
         "route": "/maintenance-prediction",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
       {
         "kind": "api",
         "sourceProject": "AIRVParkCampgroundManager",
-        "path": "backend/routes/ai.js:224",
+        "path": "backend/routes/ai.js:219",
         "route": "/maintenance-prediction",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
@@ -4433,7 +4444,7 @@
       {
         "kind": "api",
         "sourceProject": "AICarWashChainOptimizer",
-        "path": "backend/src/routes/ai.js:169",
+        "path": "backend/src/routes/ai.js:170",
         "route": "/maintenance-prediction",
         "originApp": "retail-commerce-consumer/generic-ordering-service-enhanced"
       }
@@ -4535,7 +4546,7 @@
   },
   {
     "name": "No AI Grief Support Chatbot For Families Page",
-    "canonicalKey": "ai chatbot families for grief no support",
+    "canonicalKey": "ai chatbot family for grief no support",
     "aliases": [],
     "kinds": [
       "page"
@@ -4639,7 +4650,7 @@
   },
   {
     "name": "No AI Restoration Estimate From Headstone Photos Page",
-    "canonicalKey": "ai estimate from headstone no photos restoration",
+    "canonicalKey": "ai estimate from headstone no photo restoration",
     "aliases": [],
     "kinds": [
       "page"
@@ -4787,7 +4798,7 @@
       {
         "kind": "api",
         "sourceProject": "AIMarineBoatDockManager",
-        "path": "server/routes/ai.js:274",
+        "path": "server/routes/ai.js:275",
         "route": "/occupancy-optimizer",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -4821,7 +4832,7 @@
   },
   {
     "name": "Only5 Frontend Pages Despite24 Crud Entities Maj Page",
-    "canonicalKey": "crud despite24 entities frontend maj only5 pages",
+    "canonicalKey": "crud despite24 entity frontend maj only5 page",
     "aliases": [],
     "kinds": [
       "page"
@@ -4865,7 +4876,7 @@
       {
         "kind": "api",
         "sourceProject": "AICemeteryMemorialParkManager",
-        "path": "server/seeds/seed.js:250",
+        "path": "server/seeds/seed.js:256",
         "route": "/docs/licenses/operating_2026.pdf",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -4896,27 +4907,6 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "hairSalon",
-        "path": "src/app/(dashboard)/dashboard/page.tsx:165",
-        "route": "/packages",
-        "originApp": "retail-commerce-consumer/local-service-directory"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "hairSalon",
-        "path": "src/app/(dashboard)/packages/page.tsx",
-        "route": "/packages",
-        "originApp": "retail-commerce-consumer/local-service-directory"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "hairSalon",
-        "path": "src/components/Sidebar.tsx:58",
-        "route": "/packages",
-        "originApp": "retail-commerce-consumer/local-service-directory"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AIPhotographyBusinessManager",
         "path": "frontend/src/App.js:94",
         "route": "/packages",
@@ -4942,6 +4932,27 @@
         "path": "frontend/src/pages/Packages.js",
         "route": "/Packages",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "hairSalon",
+        "path": "src/app/(dashboard)/dashboard/page.tsx:161",
+        "route": "/packages",
+        "originApp": "retail-commerce-consumer/local-service-directory"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "hairSalon",
+        "path": "src/app/(dashboard)/packages/page.tsx",
+        "route": "/packages",
+        "originApp": "retail-commerce-consumer/local-service-directory"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "hairSalon",
+        "path": "src/components/Sidebar.tsx:56",
+        "route": "/packages",
+        "originApp": "retail-commerce-consumer/local-service-directory"
       },
       {
         "kind": "api",
@@ -5086,7 +5097,7 @@
       {
         "kind": "api",
         "sourceProject": "AICemeteryMemorialParkManager",
-        "path": "server/seeds/seed.js:255",
+        "path": "server/seeds/seed.js:261",
         "route": "/docs/compliance/preneed_audit_2025.pdf",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -5183,7 +5194,7 @@
   },
   {
     "name": "Rag Over Genealogical Records And Family Submissio Page",
-    "canonicalKey": "and family genealogical over rag records submissio",
+    "canonicalKey": "and family genealogical over rag record submissio",
     "aliases": [],
     "kinds": [
       "page"
@@ -5250,7 +5261,7 @@
   },
   {
     "name": "Real Time Maintenance Alerts Irrigation Mowing Van Page",
-    "canonicalKey": "alerts irrigation maintenance mowing real time van",
+    "canonicalKey": "alert irrigation maintenance mowing real time van",
     "aliases": [],
     "kinds": [
       "page"
@@ -5310,7 +5321,9 @@
   {
     "name": "Reservations",
     "canonicalKey": "reservation",
-    "aliases": [],
+    "aliases": [
+      "Reservations Page"
+    ],
     "kinds": [
       "api",
       "navigation",
@@ -5318,7 +5331,7 @@
     ],
     "routes": [
       "/Reservations",
-      "/api/reservations",
+      "/ReservationsPage",
       "/reservations"
     ],
     "sourceProjects": [
@@ -5382,9 +5395,16 @@
         "originApp": "retail-commerce-consumer/food-bank-pantry-manager"
       },
       {
+        "kind": "page",
+        "sourceProject": "AIHotelRevenueManager",
+        "path": "client/src/pages/ReservationsPage.jsx",
+        "route": "/ReservationsPage",
+        "originApp": "retail-commerce-consumer/food-bank-pantry-manager"
+      },
+      {
         "kind": "navigation",
         "sourceProject": "independentRestaurant",
-        "path": "src/components/layout/sidebar.tsx:34",
+        "path": "src/components/layout/sidebar.tsx:33",
         "route": "",
         "originApp": "retail-commerce-consumer/food-flow-order"
       },
@@ -5393,13 +5413,6 @@
         "sourceProject": "independentRestaurant",
         "path": "src/app/(dashboard)/reservations/page.tsx",
         "route": "/reservations",
-        "originApp": "retail-commerce-consumer/food-flow-order"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "independentRestaurant",
-        "path": "src/lib/assistant-tools.ts:50",
-        "route": "/api/reservations",
         "originApp": "retail-commerce-consumer/food-flow-order"
       }
     ]
@@ -5427,22 +5440,8 @@
     "evidence": [
       {
         "kind": "api",
-        "sourceProject": "Boulevard",
-        "path": "server/src/routes/ai.ts:475",
-        "route": "/review-response",
-        "originApp": "retail-commerce-consumer/laundry-services"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "Boulevard",
-        "path": "src/pages/AITools.tsx:103",
-        "route": "/ai/review-response",
-        "originApp": "retail-commerce-consumer/laundry-services"
-      },
-      {
-        "kind": "api",
         "sourceProject": "AIRVParkCampgroundManager",
-        "path": "backend/routes/ai.js:137",
+        "path": "backend/routes/ai.js:132",
         "route": "/review-response",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
@@ -5459,6 +5458,20 @@
         "path": "frontend/src/pages/Dashboard.jsx:55",
         "route": "/ai/review-response",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "Boulevard",
+        "path": "server/src/routes/ai.ts:470",
+        "route": "/review-response",
+        "originApp": "retail-commerce-consumer/laundry-services"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "Boulevard",
+        "path": "src/pages/AITools.tsx:103",
+        "route": "/ai/review-response",
+        "originApp": "retail-commerce-consumer/laundry-services"
       }
     ]
   },
@@ -5542,13 +5555,6 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "beautyhqio",
-        "path": "src/app/security/page.tsx",
-        "route": "/security",
-        "originApp": "retail-commerce-consumer/local-service-directory"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AIRVParkCampgroundManager",
         "path": "frontend/src/App.jsx:97",
         "route": "/security",
@@ -5574,6 +5580,13 @@
         "path": "backend/app/middleware/security.py",
         "route": "/middleware/security",
         "originApp": "retail-commerce-consumer/generic-ordering-service-enhanced"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "beautyhqio",
+        "path": "src/app/security/page.tsx",
+        "route": "/security",
+        "originApp": "retail-commerce-consumer/local-service-directory"
       },
       {
         "kind": "page",
@@ -5639,7 +5652,7 @@
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
-        "path": "backend/routes/ai.js:624",
+        "path": "backend/routes/ai.js:599",
         "route": "/shoot-plan-optimize",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
@@ -5788,7 +5801,7 @@
       {
         "kind": "api",
         "sourceProject": "AIRVParkCampgroundManager",
-        "path": "backend/routes/ai.js:171",
+        "path": "backend/routes/ai.js:166",
         "route": "/site-matching",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
@@ -5894,7 +5907,7 @@
       {
         "kind": "api",
         "sourceProject": "AIMarineBoatDockManager",
-        "path": "server/routes/ai.js:77",
+        "path": "server/routes/ai.js:78",
         "route": "/slip-pricing",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -5928,13 +5941,6 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "beautyhqio",
-        "path": "src/app/(dashboard)/ai/social-media/page.tsx",
-        "route": "/ai/social-media",
-        "originApp": "retail-commerce-consumer/local-service-directory"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AIPhotographyBusinessManager",
         "path": "frontend/src/App.js:93",
         "route": "/social-media",
@@ -5960,6 +5966,13 @@
         "path": "frontend/src/pages/SocialMedia.js",
         "route": "/SocialMedia",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "beautyhqio",
+        "path": "src/app/(dashboard)/ai/social-media/page.tsx",
+        "route": "/ai/social-media",
+        "originApp": "retail-commerce-consumer/local-service-directory"
       },
       {
         "kind": "api",
@@ -6112,7 +6125,7 @@
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
-        "path": "backend/routes/ai.js:545",
+        "path": "backend/routes/ai.js:520",
         "route": "/style-analyzer",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
@@ -6159,7 +6172,7 @@
       {
         "kind": "api",
         "sourceProject": "AIMarineBoatDockManager",
-        "path": "server/routes/ai.js:316",
+        "path": "server/routes/ai.js:317",
         "route": "/tenant-churn-predictor",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -6240,13 +6253,6 @@
     ],
     "evidence": [
       {
-        "kind": "model",
-        "sourceProject": "beautyhqio",
-        "path": "BeautyHQ-iOS/BeautyHQ/Models/Transaction.swift",
-        "route": "",
-        "originApp": "retail-commerce-consumer/local-service-directory"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIRVParkCampgroundManager",
         "path": "frontend/src/App.jsx:93",
@@ -6259,6 +6265,13 @@
         "path": "frontend/src/pages/Dashboard.jsx:34",
         "route": "/transactions",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "model",
+        "sourceProject": "beautyhqio",
+        "path": "BeautyHQ-iOS/BeautyHQ/Models/Transaction.swift",
+        "route": "",
+        "originApp": "retail-commerce-consumer/local-service-directory"
       },
       {
         "kind": "api",
@@ -6382,7 +6395,7 @@
       {
         "kind": "api",
         "sourceProject": "AIMarineBoatDockManager",
-        "path": "server/routes/ai.js:200",
+        "path": "server/routes/ai.js:201",
         "route": "/waitlist-priority",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -6408,7 +6421,7 @@
       {
         "kind": "api",
         "sourceProject": "AIMarineBoatDockManager",
-        "path": "server/routes/ai.js:125",
+        "path": "server/routes/ai.js:126",
         "route": "/weather-advisory",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
@@ -6434,7 +6447,7 @@
       {
         "kind": "api",
         "sourceProject": "AIMarineBoatDockManager",
-        "path": "server/routes/ai.js:438",
+        "path": "server/routes/ai.js:439",
         "route": "/weather-impact-forecast",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
