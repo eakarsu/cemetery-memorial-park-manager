@@ -4,12 +4,14 @@
     "canonicalKey": "activity recommendation",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/activity-recommendations",
-      "/ai/activity-recommendations"
+      "/ai/activity-recommendations",
+      "/ai/activity-recommendations?tool=activity-recommendations"
     ],
     "sourceProjects": [
       "AIRVParkCampgroundManager"
@@ -18,6 +20,13 @@
       "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/AIActivityRecommendations.jsx:33",
+        "route": "/ai/activity-recommendations?tool=activity-recommendations",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIRVParkCampgroundManager",
@@ -120,6 +129,32 @@
     ]
   },
   {
+    "name": "AI Bereavement Resources",
+    "canonicalKey": "ai bereavement resource",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/bereavement"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:74",
+        "route": "/ai/bereavement",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
     "name": "AI Cancellation Risk",
     "canonicalKey": "ai cancellation risk",
     "aliases": [],
@@ -194,6 +229,32 @@
     ]
   },
   {
+    "name": "AI Genealogy Research Assistant",
+    "canonicalKey": "ai assistant genealogy research",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/genealogy"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:47",
+        "route": "/ai/genealogy",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
     "name": "AI Guest Segmentation",
     "canonicalKey": "ai guest segmentation",
     "aliases": [],
@@ -220,6 +281,32 @@
     ]
   },
   {
+    "name": "AI Inscription Suggestions",
+    "canonicalKey": "ai inscription suggestion",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/inscription"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:21",
+        "route": "/ai/inscription",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
     "name": "AI Maintenance Prediction",
     "canonicalKey": "ai maintenance prediction",
     "aliases": [],
@@ -241,6 +328,118 @@
         "sourceProject": "AIRVParkCampgroundManager",
         "path": "frontend/src/pages/AIMaintenancePrediction.jsx",
         "route": "/AIMaintenancePrediction",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "AI Maintenance Predictor",
+    "canonicalKey": "ai maintenance predictor",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/maintenance-prediction"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:34",
+        "route": "/ai/maintenance-prediction",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "AI Memorial Page Creator",
+    "canonicalKey": "ai creator memorial",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/memorial-page"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:61",
+        "route": "/ai/memorial-page",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "AI Obituary Writer",
+    "canonicalKey": "ai obituary writer",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/obituary"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:6",
+        "route": "/ai/obituary",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "AI Pricing Calculator",
+    "canonicalKey": "ai calculator pricing",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/PricingCalculator",
+      "/pricing-calculator"
+    ],
+    "sourceProjects": [
+      "AIPhotographyBusinessManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/Mileage.js:1",
+        "route": "/pricing-calculator",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/PricingCalculator.js:1",
+        "route": "/PricingCalculator",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
     ]
@@ -276,10 +475,12 @@
     "canonicalKey": "ai score",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/:id/ai-score"
+      "/:id/ai-score",
+      "/shoots?tool=ai-score"
     ],
     "sourceProjects": [
       "AIPhotographyBusinessManager"
@@ -288,6 +489,13 @@
       "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/Shoots.js:1",
+        "route": "/shoots?tool=ai-score",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
@@ -469,11 +677,13 @@
     "canonicalKey": "amenity demand prediction",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ai/amenity-demand-prediction",
+      "/ai/amenity-demand-prediction?tool=amenity-demand-prediction",
       "/amenity-demand-prediction"
     ],
     "sourceProjects": [
@@ -483,6 +693,13 @@
       "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/AIAmenityDemandPrediction.jsx:39",
+        "route": "/ai/amenity-demand-prediction?tool=amenity-demand-prediction",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIRVParkCampgroundManager",
@@ -502,6 +719,41 @@
         "sourceProject": "AIRVParkCampgroundManager",
         "path": "frontend/src/pages/Dashboard.jsx:62",
         "route": "/ai/amenity-demand-prediction",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "Analyze Photo",
+    "canonicalKey": "analyze photo",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/ai-editing?tool=analyze-photo",
+      "/analyze-photo"
+    ],
+    "sourceProjects": [
+      "AIPhotographyBusinessManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/AIEditing.js:1",
+        "route": "/ai-editing?tool=analyze-photo",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "backend/routes/ai.js:149",
+        "route": "/analyze-photo",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
     ]
@@ -537,9 +789,11 @@
     "canonicalKey": "auto cull",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-editing?tool=auto-cull",
       "/auto-cull"
     ],
     "sourceProjects": [
@@ -549,6 +803,13 @@
       "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/AIEditing.js:1",
+        "route": "/ai-editing?tool=auto-cull",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
@@ -740,9 +1001,11 @@
     "canonicalKey": "burial recommender site",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai/burial-site-recommender",
       "/burial-site-recommender"
     ],
     "sourceProjects": [
@@ -752,6 +1015,13 @@
       "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:114",
+        "route": "/ai/burial-site-recommender",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AICemeteryMemorialParkManager",
@@ -766,9 +1036,11 @@
     "canonicalKey": "business insight",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-editing?tool=business-insights",
       "/business-insights"
     ],
     "sourceProjects": [
@@ -778,6 +1050,13 @@
       "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/AIEditing.js:1",
+        "route": "/ai-editing?tool=business-insights",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
@@ -792,11 +1071,13 @@
     "canonicalKey": "cancellation risk",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ai/cancellation-risk",
+      "/ai/cancellation-risk?tool=cancellation-risk",
       "/cancellation-risk"
     ],
     "sourceProjects": [
@@ -806,6 +1087,13 @@
       "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/AICancellationRisk.jsx:61",
+        "route": "/ai/cancellation-risk?tool=cancellation-risk",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIRVParkCampgroundManager",
@@ -1405,6 +1693,32 @@
     ]
   },
   {
+    "name": "Commemorative Event Planner",
+    "canonicalKey": "commemorative event planner",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/commemorative-event"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:180",
+        "route": "/ai/commemorative-event",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
     "name": "Competitor Snapshot",
     "canonicalKey": "competitor snapshot",
     "aliases": [],
@@ -1504,6 +1818,62 @@
         "sourceProject": "AICemeteryMemorialParkManager",
         "path": "server/routes/notifications.js:76",
         "route": "/configured",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "Contracts",
+    "canonicalKey": "contract",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "page"
+    ],
+    "routes": [
+      "/Contracts",
+      "/contracts"
+    ],
+    "sourceProjects": [
+      "AIPhotographyBusinessManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/Contracts.js:1",
+        "route": "/contracts",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/App.js:89",
+        "route": "/contracts",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/components/Layout.js:8",
+        "route": "/contracts",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/Contracts.js",
+        "route": "/Contracts",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/Dashboard.js:73",
+        "route": "/contracts",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
     ]
@@ -2273,6 +2643,99 @@
     ]
   },
   {
+    "name": "Dynamic Pricing",
+    "canonicalKey": "dynamic pricing",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api",
+      "page"
+    ],
+    "routes": [
+      "/ai/dynamic-pricing",
+      "/ai/dynamic-pricing?tool=dynamic-pricing",
+      "/dynamic-pricing"
+    ],
+    "sourceProjects": [
+      "AIRVParkCampgroundManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/AIDynamicPricing.jsx:73",
+        "route": "/ai/dynamic-pricing?tool=dynamic-pricing",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "backend/routes/ai.js:94",
+        "route": "/dynamic-pricing",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/App.jsx:102",
+        "route": "/ai/dynamic-pricing",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/Dashboard.jsx:54",
+        "route": "/ai/dynamic-pricing",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "Edits",
+    "canonicalKey": "edit",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/ai-editing?tool=edits",
+      "/edits"
+    ],
+    "sourceProjects": [
+      "AIPhotographyBusinessManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/AIEditing.js:1",
+        "route": "/ai-editing?tool=edits",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "backend/routes/ai.js:106",
+        "route": "/edits",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "backend/routes/ai.js:85",
+        "route": "/edits",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
     "name": "Email Templates",
     "canonicalKey": "email template",
     "aliases": [],
@@ -2394,6 +2857,32 @@
         "sourceProject": "AICemeteryMemorialParkManager",
         "path": "server/routes/aiNew.js:274",
         "route": "/family-reunion",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "Family Reunion Organizer",
+    "canonicalKey": "family organizer reunion",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/family-reunion"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:137",
+        "route": "/ai/family-reunion",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
     ]
@@ -2561,12 +3050,14 @@
     "canonicalKey": "ai gallery organization",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/GalleryOrganizationAI",
-      "/gallery-organization-ai"
+      "/gallery-organization-ai",
+      "/gallery-organization-ai?tool=gallery-organization-ai"
     ],
     "sourceProjects": [
       "AIPhotographyBusinessManager"
@@ -2575,6 +3066,13 @@
       "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/GalleryOrganizationAI.js:46",
+        "route": "/gallery-organization-ai?tool=gallery-organization-ai",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
@@ -3918,10 +4416,12 @@
     "canonicalKey": "email gallery generate",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/:id/generate-gallery-email"
+      "/:id/generate-gallery-email",
+      "/shoots?tool=generate-gallery-email"
     ],
     "sourceProjects": [
       "AIPhotographyBusinessManager"
@@ -3930,6 +4430,13 @@
       "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/Shoots.js:1",
+        "route": "/shoots?tool=generate-gallery-email",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
@@ -3987,6 +4494,57 @@
         "sourceProject": "AIPhotographyBusinessManager",
         "path": "backend/routes/invoices.js:92",
         "route": "/:id/generate-payment-link",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "Guest Segmentation",
+    "canonicalKey": "guest segmentation",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api",
+      "page"
+    ],
+    "routes": [
+      "/ai/guest-segmentation",
+      "/ai/guest-segmentation?tool=guest-segmentation",
+      "/guest-segmentation"
+    ],
+    "sourceProjects": [
+      "AIRVParkCampgroundManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/AIGuestSegmentation.jsx:39",
+        "route": "/ai/guest-segmentation?tool=guest-segmentation",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "backend/routes/ai.js:312",
+        "route": "/guest-segmentation",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/App.jsx:111",
+        "route": "/ai/guest-segmentation",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/Dashboard.jsx:60",
+        "route": "/ai/guest-segmentation",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
     ]
@@ -4103,6 +4661,32 @@
     ]
   },
   {
+    "name": "Historical Archive Assistant",
+    "canonicalKey": "archive assistant historical",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/historical-archive"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:167",
+        "route": "/ai/historical-archive",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
     "name": "Inscription",
     "canonicalKey": "inscription",
     "aliases": [],
@@ -4192,9 +4776,11 @@
     "canonicalKey": "advisor document legacy",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai/legacy-document-advisor",
       "/legacy-document-advisor"
     ],
     "sourceProjects": [
@@ -4204,6 +4790,13 @@
       "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:127",
+        "route": "/ai/legacy-document-advisor",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AICemeteryMemorialParkManager",
@@ -4388,22 +4981,22 @@
     "canonicalKey": "maintenance prediction",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ai/maintenance-prediction",
+      "/ai/maintenance-prediction?tool=maintenance-prediction",
       "/maintenance-prediction"
     ],
     "sourceProjects": [
-      "AICarWashChainOptimizer",
       "AICemeteryMemorialParkManager",
       "AIMarineBoatDockManager",
       "AIRVParkCampgroundManager"
     ],
     "consolidatedFromApps": [
-      "retail-commerce-consumer/cemetery-memorial-park-manager",
-      "retail-commerce-consumer/generic-ordering-service-enhanced"
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
       {
@@ -4418,6 +5011,13 @@
         "sourceProject": "AIMarineBoatDockManager",
         "path": "server/routes/ai.js:159",
         "route": "/maintenance-prediction",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/AIMaintenancePrediction.jsx:40",
+        "route": "/ai/maintenance-prediction?tool=maintenance-prediction",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
       {
@@ -4440,13 +5040,57 @@
         "path": "frontend/src/pages/Dashboard.jsx:59",
         "route": "/ai/maintenance-prediction",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "Marketing Content",
+    "canonicalKey": "content marketing",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api",
+      "page"
+    ],
+    "routes": [
+      "/ai/marketing-content",
+      "/ai/marketing-content?tool=marketing-content",
+      "/marketing-content"
+    ],
+    "sourceProjects": [
+      "AIRVParkCampgroundManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/AIMarketingContent.jsx:35",
+        "route": "/ai/marketing-content?tool=marketing-content",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
       {
         "kind": "api",
-        "sourceProject": "AICarWashChainOptimizer",
-        "path": "backend/src/routes/ai.js:170",
-        "route": "/maintenance-prediction",
-        "originApp": "retail-commerce-consumer/generic-ordering-service-enhanced"
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "backend/routes/ai.js:202",
+        "route": "/marketing-content",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/App.jsx:106",
+        "route": "/ai/marketing-content",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/Dashboard.jsx:58",
+        "route": "/ai/marketing-content",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
     ]
   },
@@ -4514,6 +5158,32 @@
         "sourceProject": "AIPhotographyBusinessManager",
         "path": "frontend/src/pages/Mileage.js",
         "route": "/Mileage",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "Monument Design Assistant",
+    "canonicalKey": "assistant design monument",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/monument-designer"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:101",
+        "route": "/ai/monument-designer",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
     ]
@@ -4779,6 +5449,50 @@
     ]
   },
   {
+    "name": "Occupancy Forecast",
+    "canonicalKey": "forecast occupancy",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api",
+      "page"
+    ],
+    "routes": [
+      "/ai/occupancy-forecast",
+      "/ai/occupancy-forecast?tool=occupancy-forecast",
+      "/occupancy-forecast"
+    ],
+    "sourceProjects": [
+      "AIRVParkCampgroundManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/AIOccupancyForecast.jsx:42",
+        "route": "/ai/occupancy-forecast?tool=occupancy-forecast",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "backend/routes/ai.js:253",
+        "route": "/occupancy-forecast",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/App.jsx:108",
+        "route": "/ai/occupancy-forecast",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
     "name": "Occupancy Optimizer",
     "canonicalKey": "occupancy optimizer",
     "aliases": [],
@@ -4992,6 +5706,32 @@
         "sourceProject": "AICemeteryMemorialParkManager",
         "path": "server/routes/aiNew.js:319",
         "route": "/perpetual-care-allocation",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "Perpetual Care Fund Allocation",
+    "canonicalKey": "allocation care fund perpetual",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/perpetual-care-allocation"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:152",
+        "route": "/ai/perpetual-care-allocation",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
     ]
@@ -5422,22 +6162,29 @@
     "canonicalKey": "response review",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ai/review-response",
+      "/ai/review-response?tool=review-response",
       "/review-response"
     ],
     "sourceProjects": [
-      "AIRVParkCampgroundManager",
-      "Boulevard"
+      "AIRVParkCampgroundManager"
     ],
     "consolidatedFromApps": [
-      "retail-commerce-consumer/cemetery-memorial-park-manager",
-      "retail-commerce-consumer/laundry-services"
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/AIReviewResponse.jsx:33",
+        "route": "/ai/review-response?tool=review-response",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIRVParkCampgroundManager",
@@ -5458,20 +6205,6 @@
         "path": "frontend/src/pages/Dashboard.jsx:55",
         "route": "/ai/review-response",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "Boulevard",
-        "path": "server/src/routes/ai.ts:470",
-        "route": "/review-response",
-        "originApp": "retail-commerce-consumer/laundry-services"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "Boulevard",
-        "path": "src/pages/AITools.tsx:103",
-        "route": "/ai/review-response",
-        "originApp": "retail-commerce-consumer/laundry-services"
       }
     ]
   },
@@ -5635,12 +6368,14 @@
     "canonicalKey": "optimize plan shoot",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ShootPlanOptimize",
-      "/shoot-plan-optimize"
+      "/shoot-plan-optimize",
+      "/shoot-plan-optimize?tool=shoot-plan-optimize"
     ],
     "sourceProjects": [
       "AIPhotographyBusinessManager"
@@ -5649,6 +6384,13 @@
       "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/ShootPlanOptimize.js:47",
+        "route": "/shoot-plan-optimize?tool=shoot-plan-optimize",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIPhotographyBusinessManager",
@@ -5784,11 +6526,13 @@
     "canonicalKey": "matching site",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ai/site-matching",
+      "/ai/site-matching?tool=site-matching",
       "/site-matching"
     ],
     "sourceProjects": [
@@ -5798,6 +6542,13 @@
       "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/AISiteMatching.jsx:35",
+        "route": "/ai/site-matching?tool=site-matching",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "api",
         "sourceProject": "AIRVParkCampgroundManager",
@@ -5918,27 +6669,27 @@
     "canonicalKey": "media social",
     "aliases": [],
     "kinds": [
-      "api",
+      "ai-page",
       "page"
     ],
     "routes": [
       "/SocialMedia",
-      "/ai/social-media",
       "/social-media"
     ],
     "sourceProjects": [
-      "AIAnimalShelterRescueManager",
-      "AIGhostKitchenNetworkManager",
-      "AIPhotographyBusinessManager",
-      "beautyhqio"
+      "AIPhotographyBusinessManager"
     ],
     "consolidatedFromApps": [
-      "retail-commerce-consumer/cemetery-memorial-park-manager",
-      "retail-commerce-consumer/food-bank-pantry-manager",
-      "retail-commerce-consumer/local-service-directory",
-      "retail-commerce-consumer/tattoo-body-art-studio-manager"
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIPhotographyBusinessManager",
+        "path": "frontend/src/pages/SocialMedia.js:1",
+        "route": "/social-media",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
       {
         "kind": "page",
         "sourceProject": "AIPhotographyBusinessManager",
@@ -5966,48 +6717,57 @@
         "path": "frontend/src/pages/SocialMedia.js",
         "route": "/SocialMedia",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
-      },
+      }
+    ]
+  },
+  {
+    "name": "Staff Scheduling",
+    "canonicalKey": "scheduling staff",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api",
+      "page"
+    ],
+    "routes": [
+      "/ai/staff-scheduling",
+      "/ai/staff-scheduling?tool=staff-scheduling",
+      "/staff-scheduling"
+    ],
+    "sourceProjects": [
+      "AIRVParkCampgroundManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
       {
-        "kind": "page",
-        "sourceProject": "beautyhqio",
-        "path": "src/app/(dashboard)/ai/social-media/page.tsx",
-        "route": "/ai/social-media",
-        "originApp": "retail-commerce-consumer/local-service-directory"
+        "kind": "ai-page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/AIStaffScheduling.jsx:43",
+        "route": "/ai/staff-scheduling?tool=staff-scheduling",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
       {
         "kind": "api",
-        "sourceProject": "AIAnimalShelterRescueManager",
-        "path": "backend/routes/ai.js:106",
-        "route": "/social-media",
-        "originApp": "retail-commerce-consumer/tattoo-body-art-studio-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIGhostKitchenNetworkManager",
-        "path": "backend/routes/ai.js:138",
-        "route": "/social-media",
-        "originApp": "retail-commerce-consumer/food-bank-pantry-manager"
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "backend/routes/ai.js:327",
+        "route": "/staff-scheduling",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
       {
         "kind": "page",
-        "sourceProject": "AIGhostKitchenNetworkManager",
-        "path": "frontend/src/App.jsx:115",
-        "route": "/ai/social-media",
-        "originApp": "retail-commerce-consumer/food-bank-pantry-manager"
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/App.jsx:112",
+        "route": "/ai/staff-scheduling",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       },
       {
         "kind": "page",
-        "sourceProject": "AIGhostKitchenNetworkManager",
-        "path": "frontend/src/App.jsx:217",
-        "route": "/ai/social-media",
-        "originApp": "retail-commerce-consumer/food-bank-pantry-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIGhostKitchenNetworkManager",
-        "path": "frontend/src/pages/Dashboard.jsx:52",
-        "route": "/ai/social-media",
-        "originApp": "retail-commerce-consumer/food-bank-pantry-manager"
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/Dashboard.jsx:61",
+        "route": "/ai/staff-scheduling",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
     ]
   },
@@ -6283,6 +7043,50 @@
     ]
   },
   {
+    "name": "Upsell Recommendations",
+    "canonicalKey": "recommendation upsell",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api",
+      "page"
+    ],
+    "routes": [
+      "/ai/upsell-recommendations",
+      "/ai/upsell-recommendations?tool=upsell-recommendations",
+      "/upsell-recommendations"
+    ],
+    "sourceProjects": [
+      "AIRVParkCampgroundManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/pages/AIUpsellRecommendations.jsx:56",
+        "route": "/ai/upsell-recommendations?tool=upsell-recommendations",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "backend/routes/ai.js:269",
+        "route": "/upsell-recommendations",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIRVParkCampgroundManager",
+        "path": "frontend/src/App.jsx:109",
+        "route": "/ai/upsell-recommendations",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
     "name": "Utilities",
     "canonicalKey": "utility",
     "aliases": [],
@@ -6345,6 +7149,32 @@
         "sourceProject": "AIPhotographyBusinessManager",
         "path": "backend/routes/integrations.js:368",
         "route": "/video-highlight-reel",
+        "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
+      }
+    ]
+  },
+  {
+    "name": "Virtual Cemetery Tour Generator",
+    "canonicalKey": "cemetery generator tour virtual",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/virtual-tour"
+    ],
+    "sourceProjects": [
+      "AICemeteryMemorialParkManager"
+    ],
+    "consolidatedFromApps": [
+      "retail-commerce-consumer/cemetery-memorial-park-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AICemeteryMemorialParkManager",
+        "path": "client/src/pages/AIFeaturePage.js:87",
+        "route": "/ai/virtual-tour",
         "originApp": "retail-commerce-consumer/cemetery-memorial-park-manager"
       }
     ]

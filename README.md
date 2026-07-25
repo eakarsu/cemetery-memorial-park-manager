@@ -3,7 +3,7 @@
 Industry: **Retail, Commerce & Consumer**  
 Specialization: **Cemetery Memorial Park Manager**
 
-This standalone application consolidates source-backed capabilities into 160 optimized features, including 26 visible data-backed or AI-enabled views. Its public demo SQLite database contains 272 sanitized source rows across 17 imported tables and 120 operational workflow records.
+This standalone application consolidates source-backed capabilities into 182 optimized features, including 60 visible data-backed or AI-enabled views. Its public demo SQLite database contains 272 sanitized source rows across 17 imported tables and 120 operational workflow records.
 
 ## Run locally
 

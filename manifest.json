@@ -11,12 +11,12 @@
     "AIPhotographyBusinessManager",
     "AIRVParkCampgroundManager"
   ],
-  "featureCount": 160,
-  "candidateFeatureCount": 258,
-  "eliminatedSimilarFeatures": 98,
-  "evidenceCount": 468,
-  "aiPageCount": 0,
-  "sourceAIPageCount": 0,
+  "featureCount": 182,
+  "candidateFeatureCount": 271,
+  "eliminatedSimilarFeatures": 89,
+  "evidenceCount": 520,
+  "aiPageCount": 38,
+  "sourceAIPageCount": 38,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
@@ -25,6 +25,6 @@
     "seededTables": 17,
     "seededRows": 272
   },
-  "visibleFeatureCount": 26,
+  "visibleFeatureCount": 60,
   "featureVisibilityMode": "seeded-or-ai"
 }
